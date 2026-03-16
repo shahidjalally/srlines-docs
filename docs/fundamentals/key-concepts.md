@@ -1,6 +1,6 @@
 ---
 title: Key Concepts
-description: Learn core concepts: contacts, conversations, workflows, templates, and events.
+description: "Learn core concepts: contacts, conversations, workflows, templates, and events."
 ---
 
 # Key Concepts
