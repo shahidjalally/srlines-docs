@@ -1,22 +1,27 @@
-# SRLINES Docs Content Pack
+# SRLINES Docs Portal
 
-This repository contains a ready-to-publish Docusaurus `docs/` content set for **docs.srlines.net**.
+This repository now contains a complete Docusaurus documentation portal for **docs.srlines.net**.
 
-## What is included
+## Included features
 
-- 95 Markdown documentation pages focused on WhatsApp automation SaaS use-cases.
-- A ready `sidebars.js` with category navigation.
-- Topic coverage aligned to onboarding, automation, integrations, analytics, security, and developer APIs.
+- ✅ Landing page at `/` with quick navigation cards.
+- ✅ Top navigation menu with docs entry and website link.
+- ✅ Search bar (local search plugin, no Algolia dependency required).
+- ✅ Sidebar navigation across all docs categories.
+- ✅ Doc pagination (previous/next links on documentation pages).
+- ✅ `sitemap.xml` generation during build for Google Search Console submission.
 
-## Quick publish notes
+## Local development
 
-1. Initialize a Docusaurus site (if not already initialized):
-   ```bash
-   npx create-docusaurus@latest . classic --skip-install
-   ```
-2. Keep this `docs/` folder and `sidebars.js`.
-3. Configure `docusaurus.config.js` with:
-   - `url: 'https://docs.srlines.net'`
-   - `baseUrl: '/'`
-   - `organizationName` and `projectName` for your GitHub repo.
-4. Add `CNAME` containing `docs.srlines.net` when deploying GitHub Pages.
+```bash
+npm install
+npm run start
+```
+
+## Production build
+
+```bash
+npm run build
+```
+
+The GitHub Actions workflow in `.github/workflows/docusaurus.yml` deploys the generated `build/` output to GitHub Pages.
